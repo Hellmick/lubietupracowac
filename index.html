@@ -9,9 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="script.js"></script>
     </head>
-    <body>
-        <div id="slider" onload="slider()"></div>
+    <body onload="slider();">
+        <div id="sliderImage"></div>
         <main>
             <logo>
                 <img src="./static/img/"/>
@@ -21,52 +22,55 @@
             </logo>
             <nav>
                 <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                    <li>Dolor</li>
-                    <li>Sit</li>
-                    <li>Amet</li>
+                    <li>O inicjatywie</li>
+                    <li>Pracodawca</li>
+                    <li>Pracownik</li>
+                    <li>Student</li>
+                    <li>Kontakt</li>
                 </ul>
             </nav>
             <section class="two-headers-paragraph" id="index-first-one">
-                <h2>Lorem ipsum dolor</h2>
-                <h1>Sit amet</h1>
+                <h2>Lubię tu pracować!</h2>
+                <h1>Praca i studia w regionie!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est non nulla pharetra cursus. 
-                    Nullam in urna ultrices, suscipit elit molestie, venenatis nulla. Sed malesuada porttitor erat a ornare. 
-                    Cras a risus ex. Sed sodales tortor sit amet elit tempus, congue consectetur urna tempor. 
-                    Pellentesque vitae enim ipsum. Aliquam accumsan volutpat quam vel sodales. Vestibulum in elementum libero. 
-                    Cras hendrerit posuere lectus, ut dictum urna varius eu.
+                    Lubię tu pracować – to program samorządu województwa kujawsko-pomorskiego, 
+                    który powstał dla młodych mieszkańców Kujaw i Pomorza. Praca? Studia? 
+                    Rozwój? Na to wszystko odpowiada program Lubię tu pracować. Dzięki niemu rozwiniesz się, 
+                    znajdziesz wymarzone studia lub pracę marzeń – stałą bądź dorywczą. 
+                    Wszystko po to, by zostać tu – w kujawsko-pomorskim. 
                 </p>
                 <button>Read more</button>
             </section>
             <section class="three-boxes">
                 <div class="icon-box">
                     <img src="static/img/rzultamorda.jpg"/>
-                    <p>
-                        Nullam in urna ultrices, suscipit elit molestie, venenatis nulla.
-                    </p>
+                    <h3>Praca</h3>
                     <div>
-                        <a href="#">lorem ipsum</a>
+                        <p>
+                            Znajdź pracę marzeń w województwie. Rozwijaj się, zarabiaj i ciesz się ze swojej pracy.
+                        </p>
                     </div>
+                    <a href="#">Zapytaj</a>
+                </div>
+                <div class="icon-box" id="second">
+                    <img src="static/img/rzultamorda.jpg"/>
+                    <h3>Pracodawca</h3>
+                    <div>
+                        <p>
+                            Jesteś firmą lub instytucją, która poszukuje pracowników – znajdź ich tutaj!
+                        </p>
+                    </div>
+                    <a href="#">Zapytaj</a>
                 </div>
                 <div class="icon-box">
                     <img src="static/img/rzultamorda.jpg"/>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <h3>Studia</h3>
                     <div>
-                        <a href="#">lorem ipsum</a>
+                        <p>
+                            Skończyłeś szkołę średnią lub dalej się rozwijasz – tutaj znajdziesz wymarzony kierunek na najlepszej uczelni.
+                        </p>
                     </div>
-                </div>
-                <div class="icon-box">
-                    <img src="static/img/rzultamorda.jpg"/>
-                    <p>
-                        Sed ac est non nulla pharetra cursus. 
-                    </p>
-                    <div>
-                        <a href="#">lorem ipsum</a>
-                    </div>
+                    <a href="#">Zapytaj</a>
                 </div>
             </section>
             <section class="image-and-list">
