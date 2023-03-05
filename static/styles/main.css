@@ -19,7 +19,7 @@ main {
     position: absolute;
     left: 0;
     right: 0;
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     z-index: 999;
@@ -39,6 +39,17 @@ logo > img {
 
 logo > #email {
     float: right;
+    font-size: 1,25rem;
+    margin-top: 20px;
+}
+
+logo > #email > p {
+    margin: 8px;
+    float: right;
+}
+
+logo > #email > i {
+    font-size: 40px;
 }
 
 nav {
@@ -109,7 +120,6 @@ section#index-first-one {
 
 section#index-first-one > button {
     padding: 15px 30px;
-    border: 2px solid #e67300;
     background-color: #e67300;
     border-radius: 10px;
     color: #fff;
@@ -117,12 +127,12 @@ section#index-first-one > button {
     font-weight: 700;
     font-size: 1rem;
     margin: 20px 0 70px 30px;
+    border: none;
 }
 
 section#index-first-one > button:hover {
     cursor: pointer;
-    background-color: #fff;
-    color: #e67300;
+    background-color: #11ac0c;
 }
 
 h2 {
@@ -138,12 +148,12 @@ h2 {
 
 .icon-box {
     background-color: #eee;
-    padding: 50px 30px 50px 30px;
-    width: 25%;
+    padding: 50px;
+    width: 20%;
     border-radius: 15px;
     box-shadow: 0 0 5px #888;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #888;
 }
 
@@ -152,7 +162,8 @@ h2 {
     display: flex;
     align-self: flex-end;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    height: 9rem;
 }
 
 .icon-box > h3 {
@@ -167,19 +178,19 @@ h2 {
     color: #e67300;
 }
 
-.icon-box > img {
-    display: block;
-    width: 80%;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+.icon-box > i {
+    font-size: 40px;
 }
 
 .icon-box#second  {
     background-color: #e67300;
-    color: #888;
+    color: #ddd;
 }
 
 .icon-box#second > a {
-    color: #888;
+    color: #ddd;
+}
+
+.icon-box#second > h3 {
+    color: #ddd;
 }
