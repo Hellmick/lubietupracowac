@@ -1,7 +1,7 @@
 @media screen and (max-width: 1150px) {
     
     .three-boxes {
-        width: 80%;
+        width: 60%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -11,6 +11,7 @@
         width: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 100px;
     }
 
 }
