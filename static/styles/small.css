@@ -14,4 +14,14 @@
         margin-bottom: 100px;
     }
 
+    .image-and-list {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-and-list > img {
+        display: none;
+    }
+
 }

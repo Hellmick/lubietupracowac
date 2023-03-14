@@ -49,6 +49,15 @@ logo > #email {
 logo > #email > p {
     margin: 8px;
     float: right;
+    color: #444;
+}
+
+logo > #email > p > i {
+    color: inherit;
+}
+
+logo > #email > p > a {
+    color: inherit;
 }
 
 logo > #email > i {
@@ -100,19 +109,25 @@ nav > ul > li:last-child {
     border-radius: 0 15px 15px 0;
 }
 
-.two-headers-paragraph > h2 {
+.two-headers-paragraph {
+    color: #333;
+}
+
+.two-headers-paragraph#index-first-one {
+    color: #eee;
+}
+
+.two-headers-paragraph > h3 {
     color: #e67300;
     font-size: 1.3rem;
 }
 
 .two-headers-paragraph > h1 {
-    color: #eee;
     font-size: 2.2rem;
 }
 
 .two-headers-paragraph > p {
-    font-size: 1.2rem;
-    color: #eee;
+    font-size: 1.1rem;
 }
 
 section#index-first-one {
@@ -138,7 +153,7 @@ section#index-first-one > button:hover {
     background-color: #11ac0c;
 }
 
-h2 {
+h3 {
     margin: 0;
     display: inline;
 }
@@ -161,12 +176,16 @@ h2 {
 }
 
 .icon-box > div {
-    width: 100%;
     display: flex;
     align-self: flex-end;
     text-align: center;
     font-size: 1rem;
     height: 9rem;
+}
+
+.icon-box > div > p {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .icon-box > h3 {
@@ -186,12 +205,13 @@ h2 {
 }
 
 .icon-box > i {
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .icon-box > img {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon-box#second  {
@@ -205,4 +225,42 @@ h2 {
 
 .icon-box#second > h3 {
     color: #ddd;
+}
+
+.image-and-list {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-and-list > img {
+    display: flex;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #888;
+    float: left;
+}
+
+.two-headers-paragraph#small {
+    margin-left: 60px;
+    margin-top: 100px;
+}
+
+.two-headers-paragraph > h1 {
+    margin-top: 25px;
+}
+
+.list-inside > ul {
+    list-style-image: url('../img/checkmark2.png');
+    list-style-position: outside;
+}
+
+.list-inside > ul > li {
+    margin: 30px 20px 10px 0;
+    font-size: 1.1rem;
+}
+
+.section#job-offers {
+    display: inline-block;
+    margin-top: 20px;
 }
