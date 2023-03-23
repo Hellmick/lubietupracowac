@@ -8,8 +8,7 @@ body {
     position: absolute;
     top: 150px;
     width: 100%;
-    background-image: url('../img/slider/image1_blue.jpeg');
-    background-color: #fff;
+    background-color: #ddd;
     height: 700px;
     opacity: 0.8;
     background-size: contain;

@@ -26,3 +26,8 @@ function sliderPrevious() {
     let source = "url('./static/img/slider/image" + image.toString() + "_blue.jpeg')";
     document.getElementById("sliderImage").style.backgroundImage = source;
 }
+
+function changeButtonValue(element) {
+     let curr_value = element.value;
+     console.log(curr_value);
+}
