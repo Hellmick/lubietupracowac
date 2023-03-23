@@ -1,28 +1,31 @@
-var curIndex = 1;
+let currentImage = 1;
 const maxImage = 2;
 const img = './static/img/slider/image*_blue.jpeg'
-const duration = 10000;
+
+slider();
 
 function slider() {
+
     setInterval(function() {
-        let source = "url('./static/img/slider/image" + image.toString() + "_blue.jpeg')";
+        let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
         document.getElementById("sliderImage").style.backgroundImage = source;
-        image++;
-        if (image > maxImage) image = 1;
-        console_log(image);
+        currentImage++;
+        if (currentImage > maxImage) currentImage = 1;
+        console_log(currentImage);
     }, "10000");
+
 }
 
 function sliderNext() {
-    image++;
-    if (image > maxImage) image = 1;
-    let source = "url('./static/img/slider/image" + image.toString() + "_blue.jpeg')";
+    currentImage++;
+    if (currentImage > maxImage) currentImage = 1;
+    let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
     document.getElementById("sliderImage").style.backgroundImage = source;
 }
 
 function sliderPrevious() {
-    image--;
-    if (image < 1) image = maxImage;
-    let source = "url('./static/img/slider/image" + image.toString() + "_blue.jpeg')";
+    currentImage--;
+    if (currentImage < 1) currentImage = maxImage;
+    let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
     document.getElementById("sliderImage").style.backgroundImage = source;
 }
