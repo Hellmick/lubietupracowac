@@ -77,6 +77,11 @@ nav {
     top: 0;
 }
 
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
 nav > ul {
     width: 100%;
     margin: 0;
@@ -117,17 +122,17 @@ nav > ul > li:last-child {
     color: #eee;
 }
 
-.two-headers-paragraph > h3 {
+.two-headers-paragraph  h3 {
     color: #e67300;
     font-size: 1.3rem;
 }
 
-.two-headers-paragraph > h1 {
+.two-headers-paragraph  h1 {
     font-size: 2.2rem;
     margin-top: 25px;
 }
 
-.two-headers-paragraph > p {
+.two-headers-paragraph  p {
     font-size: 1.1rem;
 }
 
@@ -137,20 +142,6 @@ nav > ul > li:last-child {
 
 .two-headers-paragraph#index-first-one {
     color: #eee;
-}
-
-.two-headers-paragraph > div > h3 {
-    color: #e67300;
-    font-size: 1.3rem;
-}
-
-.two-headers-paragraph > div > h1 {
-    font-size: 1.8rem;
-    margin-top: 25px;
-}
-
-.two-headers-paragraph > div > p {
-    font-size: 1.1rem;
 }
 
 section#index-first-one {
