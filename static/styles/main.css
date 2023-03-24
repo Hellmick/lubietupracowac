@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -263,4 +266,80 @@ h3 {
 .section#job-offers {
     display: inline-block;
     margin-top: 20px;
+}
+
+/* Kontakt */
+
+.form-container {
+    width: 70%;
+    height: 100%;
+    border: 1px solid green;
+    float: left;
+    z-index: 1;
+}
+
+.form-container p {
+    font-weight: 600;
+}
+
+.form-container h1 {
+    font-size: 36px;
+}
+.form-container form{
+    width: 620px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container p {
+    color: #e67300;
+}
+
+.form-container input {
+    height: 50px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#tresc {
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    resize: none;
+}
+
+.zgoda label {
+    font-size: 12px;
+}
+
+#form-btn {
+    width: 160px;
+    height: 44px;
+    border: 2px solid #e67300;
+    color: #e67300;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+}
+
+#form-btn:hover {
+    cursor: pointer;
+    background-color: #11ac0c;
+    border: 2px solid #11ac0c;
+    color: white;
+    transition: 300ms;
+}
+
+.kontakt-elektroniczny {
+    width: 30%;
+    height: 650px;
+    background-color: #e67300;
+    border: 1px solid red;
+    float: right;
+    z-index: -1;
 }
