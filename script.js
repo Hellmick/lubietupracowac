@@ -28,6 +28,5 @@ function sliderPrevious() {
 }
 
 function changeButtonValue(element) {
-     let curr_value = element.value;
-     console.log(curr_value);
+     document.getElementById("dropdown-button").innerHTML = element.innerHTML;
 }
