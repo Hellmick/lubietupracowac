@@ -47,17 +47,19 @@
                     <div class="dropdown">
                         <button class="dropbtn" id="dropdown-button">Wszystkie</button>
                         <ul class="dropdown-content">
-                            <li value="IT" onclick="changeButtonValue(this);">IT</li>
-                            <li value="Sprzedaz" onclick="changeButtonValue(this);">Sprzedaż</li>
-                            <li value="Gastronomia" onclick="changeButtonValue(this);">Gastronomia</li>
+                            <li value="IT" onclick="filterOffers(this);">IT</li>
+                            <li value="Sprzedaz" onclick="filterOffers(this);">Sprzedaż</li>
+                            <li value="Gastronomia" onclick="filterOffers(this);">Gastronomia</li>
+                            <li value="Wszystkie" onclick="filterOffers(this);">Wszystkie</li>
                         </ul>
                     </div>
                 </h2>
                 <section class="offers-big" id="offers">
-                    <div class="offer-big">
+                    <div class="offer-big" data-value="1">
                         <div>
-                            <h3>Firma 1</h3>
+                            <h3>Firma Informatyczna</h3>
                             <h2>Oferta 1</h2>
+                            <span id="industry">IT</span>
                         </div>
                         <div>
                             <p>
@@ -65,10 +67,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="offer-big">
+                    <div class="offer-big" data-value="2">
                         <div>
-                            <h3>Firma 2</h3>
+                            <h3>Firma Handlowa</h3>
                             <h2>Oferta 2</h2>
+                            <span id="industry">Sprzedaż</span>
                         </div>
                         <div>
                             <p>
@@ -76,10 +79,35 @@
                             </p>
                         </div>
                     </div>
-                    <div class="offer-big">
+                    <div class="offer-big" data-value="3">
                         <div id="head">
-                            <h3>Firma 3</h3>
+                            <h3>Firma Gastronomiczna</h3>
                             <h2>Oferta 3</h2>
+                            <span id="industry">Gastronomia</span>
+                        </div>
+                        <div id="text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer-big" data-value="1">
+                        <div>
+                            <h3>Firma Informatyczna</h3>
+                            <h2>Oferta 4</h2>
+                            <span id="industry">IT</span>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer-big" data-value="3">
+                        <div id="head">
+                            <h3>Firma Gastronomiczna</h3>
+                            <h2>Oferta 5</h2>
+                            <span id="industry">Gastronomia</span>
                         </div>
                         <div id="text">
                             <p>

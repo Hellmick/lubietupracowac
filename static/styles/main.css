@@ -383,3 +383,7 @@ h3 {
 .offer-big p {
     margin: 0;
 }
+
+#industry {
+    display: none;
+}
