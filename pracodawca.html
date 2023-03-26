@@ -5,8 +5,8 @@
         <title>lorem ipsum</title>
         <link rel="stylesheet" href="static/styles/main.css"/>
         <link rel="stylesheet" href="static/styles/small.css"/>
-        <link rel="stylesheet" href="./static/styles/logowanie.css">
         <link rel="stylesheet" href="static/styles/hover_underline_animation.css"/>
+        <link rel="stylesheet" href="static/styles/employer.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="slider();">
         <div id="sliderImage"></div>
         <main>
             <logo>
@@ -31,39 +31,27 @@
                     </div>
                 </a>
             </logo>
-            
-            <nav>
-                <ul>
-                    <li><a href="./index.html">O inicjatywie</a></li>
-                    <li><a href="./nip_logowanie.html">Pracodawca</a></li>
-                    <li><a href="./email_logowanie.html">Pracownik</a></li>
-                    <li><a href="./email_logowanie.html">Student</a></li>
-                    <li><a href="./kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+            <section id="company">
+                <h1>Twoja firma: Lorem Ipsum</h1>
+                <p>Some data about the company</p>
+                <h2>Dodaj ofertę:</h2>
+                <div id="new-offer">
+                    <label for="new-offer-position">Stanowisko:</label>
+                    <input id="new-offer-position" type="text" placeholder="Tu wpisz stanowisko"/>
+                    <label for="new-offer-description">Stanowisko:</label>
+                    <textarea id="new-offer-description" type="text" placeholder="Tu wpisz opis oferty"></textarea>
+                </div>
+                <h2>Twoje aktywne oferty:</h2>
+                <div class="offers">
+                    <div class="employees-offer">
 
-            <div class="login-container">
-                <h1>Zaloguj się</h1>
-
-                <form action="">
-                    <label for="login">Adres e-mail:</label>
-                    <input type="text" id="login" placeholder="Twój adres e-mail...">
-                    <label for="password">Hasło:</label>
-                    <input type="text" id="password" placeholder="Twoje hasło...">
-                    <input type="button" value="zaloguj się" class="login-modal-button">
-                </form>
-
-                <hr>
-                <p>Nie masz jeszcze konta? <a href="rejestracja.html">Zarejestruj się</a></p>
-            </div>
-
+                    </div>
+                </div>
+                
+            </section>
         </main>
         <footer>
-            <div class="footer-logo">
-                <img src="static/img/logo.png" alt="logo">
-                <p>Administratorem państwa danych jest <br />xyz</p>
-                <p>Klauzula rodo:</p>
-                <p>Regulamin:</p>
-            </div>
+
         </footer>
     </body>
+</html>
