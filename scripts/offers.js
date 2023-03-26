@@ -1,11 +1,11 @@
 
 var offersList = [
-    { position: 'Oferta 1', company: 'Firma IT 1', description: 'lorem ipsum dolor sit', industry: 'IT', pay_range: 'mucho peso', visible: true, show_range: true },
-    { position: 'Oferta 2', company: 'Firma Sprzedazowa 1', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', pay_range: 'mediocremente peso', visible: true, show_range: true },
-    { position: 'Oferta 3', company: 'Firma Gastronomiczna 1', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', pay_range: 'poco peso', visible: true, show_range: true },
-    { position: 'Oferta 4', company: 'Firma IT 2', description: 'lorem ipsum dolor sit', industry: 'IT', pay_range: 'mucho peso', visible: true, show_range: true },
-    { position: 'Oferta 5', company: 'Firma Sprzedazowa 1', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', pay_range: 'mediocremente peso', visible: true, show_range: false },
-    { position: 'Oferta 6', company: 'Firma Gastronomiczna 2', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', pay_range: 'poco peso', visible: true, show_range: true },
+    { position: 'Oferta 1', company: 'Firma IT 1', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'IT', pay_range: 'mucho peso', visible: true, show_range: true },
+    { position: 'Oferta 2', company: 'Firma Sprzedazowa 1', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', pay_range: 'mediocremente peso', visible: true, show_range: true },
+    { position: 'Oferta 3', company: 'Firma Gastronomiczna 1', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', pay_range: 'poco peso', visible: true, show_range: true },
+    { position: 'Oferta 4', company: 'Firma IT 2', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'IT', pay_range: 'mucho peso', visible: true, show_range: true },
+    { position: 'Oferta 5', company: 'Firma Sprzedazowa 1', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', pay_range: 'mediocremente peso', visible: true, show_range: false },
+    { position: 'Oferta 6', company: 'Firma Gastronomiczna 2', short_description: 'lorem ipsum', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', pay_range: 'poco peso', visible: true, show_range: true },
 ]
 
 function showOffers() {
