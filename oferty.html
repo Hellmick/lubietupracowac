@@ -12,9 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./static/fonts/fontello-56bb7c4a/css/fontello.css"/>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <script src="script.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/offers.js"></script>
     </head>
-    <body>
+    <body onload="showOffers()">
         <div id="sliderImage"></div>
         <main>
             <logo>
@@ -55,66 +56,7 @@
                     </div>
                 </h2>
                 <section class="offers-big" id="offers">
-                    <div class="offer-big" data-value="1">
-                        <div>
-                            <h3>Firma Informatyczna</h3>
-                            <h2>Oferta 1</h2>
-                            <span id="industry">IT</span>
-                        </div>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer-big" data-value="2">
-                        <div>
-                            <h3>Firma Handlowa</h3>
-                            <h2>Oferta 2</h2>
-                            <span id="industry">Sprzedaż</span>
-                        </div>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer-big" data-value="3">
-                        <div id="head">
-                            <h3>Firma Gastronomiczna</h3>
-                            <h2>Oferta 3</h2>
-                            <span id="industry">Gastronomia</span>
-                        </div>
-                        <div id="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer-big" data-value="1">
-                        <div>
-                            <h3>Firma Informatyczna</h3>
-                            <h2>Oferta 4</h2>
-                            <span id="industry">IT</span>
-                        </div>
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="offer-big" data-value="3">
-                        <div id="head">
-                            <h3>Firma Gastronomiczna</h3>
-                            <h2>Oferta 5</h2>
-                            <span id="industry">Gastronomia</span>
-                        </div>
-                        <div id="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar consequat vulputate. Aliquam fermentum tincidunt nunc, id fermentum ligula aliquam id. Pellentesque bibendum, ex eget fermentum ullamcorper, mauris arcu dignissim nisl, quis varius orci augue eget dui. Phasellus tempus dolor ut risus ornare, id venenatis libero laoreet. Cras quis pretium orci. Integer quis nibh convallis, feugiat ligula eu, eleifend elit. Donec et odio a velit tempor feugiat eget vitae tellus. Duis eu consequat turpis, nec suscipit purus. Praesent egestas mi sit amet hendrerit convallis. Donec ac mattis leo. Sed vel lectus id magna mattis condimentum. Donec rhoncus mauris ac ex malesuada, non facilisis nisl gravida. Curabitur ut dolor consectetur, ornare nibh a, scelerisque est.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </section>
             </section>
         </main>
