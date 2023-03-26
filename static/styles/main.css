@@ -8,8 +8,7 @@ body {
     position: absolute;
     top: 150px;
     width: 100%;
-    background-image: url('../img/slider/image1_blue.jpeg');
-    background-color: #fff;
+    background-color: #ddd;
     height: 700px;
     opacity: 0.8;
     background-size: contain;
@@ -346,4 +345,36 @@ h3 {
 
 .three-boxes#offers {
     margin-top: 50px;
+}
+
+.offer-big {
+    border-radius: 25px;
+    width: 70%;
+    padding: 4%;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #d56200;
+    margin-bottom: 35px;
+    background-color: #f4f4f4;
+    font-size: 0.9rem;
+}
+
+.offer-big > #head {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+.offer-big > #text {
+    width: 75%;
+    float: left;
+}
+
+.offer-big p {
+    margin: 0;
+}
+
+#industry {
+    display: none;
 }
