@@ -9,6 +9,7 @@ body {
     top: 150px;
     width: 100%;
     background-color: #ddd;
+    background-image: url('../img/slider/image1_blue.jpeg');
     height: 700px;
     opacity: 0.8;
     background-size: contain;
@@ -114,7 +115,7 @@ nav > ul > li:last-child {
 }
 
 .two-headers-paragraph {
-    color: #333;
+    color: #eee;
 }
 
 .two-headers-paragraph#index-first-one {
@@ -137,10 +138,6 @@ nav > ul > li:last-child {
 
 .two-headers-paragraph {
     color: #333;
-}
-
-.two-headers-paragraph#index-first-one {
-    color: #eee;
 }
 
 section#index-first-one {
