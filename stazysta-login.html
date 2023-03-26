@@ -5,12 +5,12 @@
         <title>lorem ipsum</title>
         <link rel="stylesheet" href="static/styles/main.css"/>
         <link rel="stylesheet" href="static/styles/small.css"/>
+        <link rel="stylesheet" href="./static/styles/logowanie.css">
         <link rel="stylesheet" href="static/styles/hover_underline_animation.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./static/fonts/fontello-56bb7c4a/css/fontello.css"/>
-        <link rel="stylesheet" href="./static/styles/logowanie.css">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <script src="script.js"></script>
     </head>
@@ -31,23 +31,21 @@
                     </div>
                 </a>
             </logo>
-            
             <nav>
                 <ul>
                     <li><a href="./index.html">O inicjatywie</a></li>
-                    <li><a href="./nip_logowanie.html">Pracodawca</a></li>
-                    <li><a href="./email_logowanie.html">Pracownik</a></li>
-                    <li><a href="./email_logowanie.html">Student</a></li>
+                    <li><a href="./pracodawca-login.html">Pracodawca</a></li>
+                    <li><a href="./pracownik-login.html">Pracownik</a></li>
+                    <li><a href="./stazysta-login.html">Staż</a></li>
                     <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
-
             <div class="login-container">
                 <h1>Zaloguj się</h1>
 
                 <form action="">
-                    <label for="login">Numer Identyfikacji Podatkowej:</label>
-                    <input type="text" id="login" placeholder="Twój NIP...">
+                    <label for="login">Adres e-mail:</label>
+                    <input type="text" id="login" placeholder="Twój adres e-mail...">
                     <label for="password">Hasło:</label>
                     <input type="text" id="password" placeholder="Twoje hasło...">
                     <input type="button" value="zaloguj się" class="login-modal-button">
@@ -58,6 +56,12 @@
             </div>
 
         </main>
-
-        <!--  FOOTER  -->
+        <footer>
+            <div class="footer-logo">
+                <img src="static/img/logo.png" alt="logo">
+                <p>Administratorem państwa danych jest <br />xyz</p>
+                <p>Klauzula rodo:</p>
+                <p>Regulamin:</p>
+            </div>
+        </footer>
     </body>
