@@ -30,6 +30,8 @@ main {
 logo {
     display: block;
     height: 120px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 logo > img {
@@ -456,14 +458,16 @@ h3 {
     font-size: 20px;
 }
 
+.email-text a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .email-text a:link {
     color: #444;
     text-decoration: none;
-}
-
-.email-text a:visited {
-    color: #444;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 
