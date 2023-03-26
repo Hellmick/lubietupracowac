@@ -22,11 +22,9 @@ function showOffers() {
                     <span id="industry">` + offersList[i]['industry'] + `</span>
                 </div>
                 <div>
-                    <p>` + offersList[i]['description'] + '</p>';
-                    if (offersList[i]['show_range']) offer_html += '<p>' + offersList[i]['pay_range'] + '</p>'; 
-                    offer_html += `
-                </div>
-            </div>`;
+                    <p>` + offersList[i]['short_description'] + '</p>';
+            if (offersList[i]['show_range']) offer_html += '<p>' + offersList[i]['pay_range'] + '</p>'; 
+            offer_html += "</div></div>";
 
             element.innerHTML += offer_html;
         }
@@ -88,9 +86,13 @@ function stringSimilarity(str1, str2, substringLength = 2, caseSensitive = false
 function searchOffers() {
     let user_input = document.getElementById("search-input").value;
     for (let i = 0; i < offersList.length; i++) {
+        if (user_input == "") {
+            offersList[i]['visible'] = true;
+            continue;
+        } 
         let similarity = stringSimilarity(user_input, offersList[i]['position']);
         console.log(parseFloat(similarity) >= 0.5);
-        if (parseFloat(similarity) > 0.5) offersList[i]['visible'] = true;
+        if (parseFloat(similarity) > 0.4) offersList[i]['visible'] = true;
         else offersList[i]['visible'] = false;
         console.log("Offer: " + offersList[i]['position'] + " Similarity: " + similarity);
     }

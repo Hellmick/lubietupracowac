@@ -7,26 +7,16 @@ const img = './static/img/slider/image*_blue.jpeg'
 slider();
 
 function slider() {
-
     setInterval(function() {
         let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
         document.getElementById("sliderImage").style.backgroundImage = source;
         currentImage++;
         if (currentImage > maxImage) currentImage = 1;
     }, "10000");
-
 }
 
-function sliderNext() {
-    currentImage++;
-    if (currentImage > maxImage) currentImage = 1;
-    let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
-    document.getElementById("sliderImage").style.backgroundImage = source;
-}
-
-function sliderPrevious() {
-    currentImage--;
-    if (currentImage < 1) currentImage = maxImage;
-    let source = "url('./static/img/slider/image" + currentImage + "_blue.jpeg')";
-    document.getElementById("sliderImage").style.backgroundImage = source;
+function login(user) {
+    if (user == 'employer') window.location.href = "../pracodawca.html";
+    else if (user == 'employee') window.location.href = "../oferty.html";
+    else return false;
 }

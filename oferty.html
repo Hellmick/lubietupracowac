@@ -33,28 +33,30 @@
             </logo>
             <nav>
                 <ul>
-                    <li>O inicjatywie</li>
-                    <li>Pracodawca</li>
-                    <li>Pracownik</li>
-                    <li>Student</li>
-                    <li>Kontakt</li>
+                    <li><a href="./index.html">O inicjatywie</a></li>
+                    <li><a href="./pracodawca-login.html">Pracodawca</a></li>
+                    <li><a href="./pracownik-login.html">Pracownik</a></li>
+                    <li><a href="./stazysta-login.html">Staż</a></li>
+                    <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
             <section id="industries" class="two-headers-paragraph">
                 <h1>Znajdź pracę w swoim województwie!</h1>
-                <h2>Wyszukaj:</h2>
-                <input id="search-input" class="filter-box" type="text"/>
-                <button id="search" onclick="searchOffers()">Szukaj</button>
-                <h2>Wyszukaj interesującą Cię branżę:</h2>
-                <div class="dropdown filter-box">
-                    <button class="dropbtn" id="dropdown-button">Wszystkie</button>
-                    <ul class="dropdown-content">
-                        <li value="IT" onclick="filterOffers(this);">IT</li>
-                        <li value="Sprzedaz" onclick="filterOffers(this);">Sprzedaż</li>
-                        <li value="Gastronomia" onclick="filterOffers(this);">Gastronomia</li>
-                        <li value="Wszystkie" onclick="filterOffers(this);">Wszystkie</li>
-                    </ul>
-                </div>
+                <h2>
+                    Wyszukaj:
+                    <input id="search-input" class="filter-box" type="text" placeholder="Wyszukaj ofertę"/>
+                    Branża:
+                    <div class="dropdown filter-box">
+                        <button class="dropbtn" id="dropdown-button">Wszystkie</button>
+                        <ul class="dropdown-content">
+                            <li value="IT" onclick="filterOffers(this);">IT</li>
+                            <li value="Sprzedaz" onclick="filterOffers(this);">Sprzedaż</li>
+                            <li value="Gastronomia" onclick="filterOffers(this);">Gastronomia</li>
+                            <li value="Wszystkie" onclick="filterOffers(this);">Wszystkie</li>
+                        </ul>
+                    </div>
+                    <button id="search" onclick="searchOffers(); showOffers()">Szukaj</button>
+                </h2>
                 <section>
                     <div id="offers"></div>
                 </section>

@@ -2,7 +2,7 @@
     width: 45%;
 }
 
-#offers h2, h1, p {
+h2, h1, p {
     margin: 0;
 }
 
@@ -48,5 +48,36 @@
     width: 20%;
     font-size: 1.1rem;
     border: 3px solid #d56200;
+    border-radius: 10px;    
+}
+
+#search-input:active {
+    border: 3px solid #d56200;
+    outline: none;
+}
+
+#search {
+    height: 33px;
+    width: 10%;
+    font-size: 1.1rem;
+    background-color: #d56200;
     border-radius: 10px;
+    border: none;
+    color: #f4f4f4;
+    transition: 200ms;
+    margin-right: 25px;
+}
+
+#search:hover {
+    background-color: #11ac0c;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#industries > h1, h2 {
+    margin-bottom: 20px;
+}
+
+#industries input {
+    margin-right: 20px;
 }
