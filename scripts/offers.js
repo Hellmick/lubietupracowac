@@ -1,11 +1,11 @@
 
 var offersList = [
-    { id: 1, position: 'TIBCO Developer', company: 'Firma IT 1', description: 'lorem ipsum dolor sit', industry: 'IT', location: 'Bydgoszcz', pay_range: 'mucho peso', visible: true, show_range: true },
-    { id: 2, position: 'Żul', company: 'Piwo', description: 'go ha go ha go ha 3 zlote', industry: 'Sprzedaż', location: 'Bydgoszcz', pay_range: 'mediocremente peso', visible: true, show_range: true },
-    { id: 3, position: 'Oferta 3', company: 'Firma Gastronomiczna 1', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', location: 'Torun', pay_range: 'poco peso', visible: true, show_range: true },
-    { id: 4, position: 'Middleware Developer', company: 'Firma IT 2', description: 'lorem ipsum dolor sit', industry: 'IT', location: 'Świecie', pay_range: 'mucho peso', visible: true, show_range: true },
-    { id: 5, position: 'Oferta 5', company: 'Firma Sprzedazowa 1', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', location: 'Chełmno', pay_range: 'mediocremente peso', visible: true, show_range: false },
-    { id: 6, position: 'Oferta 6', company: 'Firma Gastronomiczna 2', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', location: 'Grudziądz', pay_range: 'poco peso', visible: true, show_range: true },
+    { position: 'TIBCO Developer', company: 'Firma IT 1', description: 'lorem ipsum dolor sit', industry: 'IT', location: 'Bydgoszcz', pay_range: 'mucho peso', visible: true, show_range: true },
+    { position: 'Żul', company: 'Piwo', description: 'go ha go ha go ha 3 zlote', industry: 'Sprzedaż', location: 'Bydgoszcz', pay_range: 'mediocremente peso', visible: true, show_range: true },
+    { position: 'Oferta 3', company: 'Firma Gastronomiczna 1', description: 'lorem ipsum dolor sit', industry: 'Gastronomia', location: 'Torun', pay_range: 'poco peso', visible: true, show_range: true },
+    { position: 'Middleware Developer', company: 'Firma IT 2', description: 'lorem ipsum dolor sit', industry: 'IT', location: 'Świecie', pay_range: 'mucho peso', visible: true, show_range: true },
+    { position: 'Oferta 5', company: 'Firma Sprzedazowa 1', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', location: 'Chełmno', pay_range: 'mediocremente peso', visible: true, show_range: false },
+    { position: 'Oferta 6', company: 'Firma Gastronomiczna 2', description: 'lorem ipsum dolor sit', industry: 'Sprzedaż', location: 'Grudziądz', pay_range: 'poco peso', visible: true, show_range: true },
 ]
 
 function showOffers() {
@@ -14,9 +14,8 @@ function showOffers() {
     element.innerHTML = "";
     for (let i = 0; i < offersList.length; i++) {
         if (offersList[i].visible) {
-            var offer_html =  `
-             <div class="offer-wide" onclick=\"\">
-                <div>
+            var offer_html =  '<div class="offer-wide" onclick=\"selectOffer(' + i + ')\">' +
+                `<div>
                     <h3>` + offersList[i]['company'] + `</h3>
                     <h2>` + offersList[i]['position'] + `</h2>
                     <span id="industry">` + offersList[i]['industry'] + `</span>
@@ -105,9 +104,11 @@ function refreshOffers() {
     filterOffers(document.getElementById("dropdown-button"));
 }
 
-function selectOffer(selected_offer) {
-    let offer = '<h1>' + selected_offer['position'] + '</h1>';
-    offer += '<h2>' + selected_offer['company'] + '</h2>';
-    offer += '<h3>' + selected_offer['location'] + '</h3>';
-    offer += ''
+function selectOffer(id) {
+    let offer = '<h1>' + offersList[id]['position'] + '</h1>';
+    offer += '<h2>' + offersList[id]['company'] + '</h2>';
+    offer += '<h3>' + offersList[id]['location'] + '</h3>';
+    offer += '<p>' + offersList[id]['description'] + '</p>';
+
+    document.getElementById('selected-offer').innerHTML = offer;
 }

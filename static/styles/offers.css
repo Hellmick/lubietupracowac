@@ -94,12 +94,27 @@ h1, h2 {
     margin-right: 20px;
 }
 
-#selectedOffer {
+#selected-offer {
     float: right;
-    height: 52vh;
+    height: 50vh;
     border-radius: 15px;
-    width: 47%;
+    width: 43%;
+    padding-left: 3%;
+    padding-top: 3%;
     border: 3px solid #d56200;
+}
+
+#selected-offer h1 {
+    font-size: 1.5rem;
+}
+
+#selected-offer h2 {
+    font-size: 1.2rem;
+}
+
+#selected-offer h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 #offers {
