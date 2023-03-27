@@ -73,7 +73,8 @@ nav {
     margin: 0;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: 0; 
+    z-index: 999;
 }
 
 nav a {
