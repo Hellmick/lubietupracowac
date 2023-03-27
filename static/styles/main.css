@@ -360,6 +360,9 @@ h3 {
     margin-top: 50px;
 }
 
+#sliderImage {
+    background-image: url('../img/slider/image1_blue.jpeg');
+}
 
 /* Kontakt */
 #kontakt {
