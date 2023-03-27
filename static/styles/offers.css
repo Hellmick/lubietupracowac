@@ -94,7 +94,7 @@ h1, h2 {
     margin-right: 20px;
 }
 
-#selected-offer {
+#selected-offer, #new-offer {
     float: right;
     height: 50vh;
     border-radius: 15px;
@@ -102,6 +102,16 @@ h1, h2 {
     padding-left: 3%;
     padding-top: 3%;
     border: 3px solid #d56200;
+}
+
+#new-offer {
+    height: 60vh;
+}
+
+#new-offer-description {
+    width: 80%;
+    height: 120px;
+    resize: none;
 }
 
 #selected-offer h1 {
@@ -131,4 +141,8 @@ h2 {
 
 h3 {
     font-size: 0.9rem;
+}
+
+#offer-items {
+    margin-top: 15px;
 }
