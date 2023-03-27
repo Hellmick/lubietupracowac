@@ -1,10 +1,9 @@
-h2, h1, p {
-    margin: 0;
+#offers {
+    width: 45%;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+h2, h1, p {
+    margin: 0;
 }
 
 #offers p {
@@ -13,7 +12,8 @@ html, body {
 
 .offer-wide {
     border-radius: 25px;
-    width: 90%;
+    width: 100%;
+    padding: 3%;
     height: 90px;
     margin-left: auto;
     margin-right: auto;
@@ -22,32 +22,24 @@ html, body {
     background-color: #f4f4f4;
     font-size: 0.9rem;
     transition: 500ms;
-    padding: 3%;
-}
-
-.offer-wide h2 {
-    margin: 0;
-    font-size: 1,1rem;
 }
 
 .offer-wide:hover {
     border: 3px solid #11ac0c;
-    cursor: pointer;
-    background-color: #eee;
 }
 
-.offer-wide > #head {
+.offer-big > #head {
     width: 25%;
     float: left;
     height: 100%;
 }
 
-.offer-wide > #text {
+.offer-big > #text {
     width: 75%;
     float: left;
 }
 
-.offer-wide p {
+.offer-big p {
     margin: 0;
 }
 
@@ -80,10 +72,6 @@ html, body {
     background-color: #11ac0c;
     color: #f4f4f4;
     cursor: pointer;
-}
-
-h1, h2 {
-    margin: 0;
 }
 
 #industries > h1, h2 {
