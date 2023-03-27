@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,27 +11,27 @@ body {
     position: absolute;
     top: 150px;
     width: 100%;
-    background-color: #ddd;
     background-image: url('../img/slider/image1_blue.jpeg');
+    background-color: #fff;
     height: 700px;
     opacity: 0.8;
     background-size: contain;
+    z-index: -1;
 }
 
 main {
-    position: absolute;
-    left: 0;
-    right: 0;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    z-index: 999;
+    margin-bottom: 20px;
+    z-index: 1;
 }
 
 logo {
     display: block;
     height: 120px;
-    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
 }
 
 logo > img {
@@ -65,21 +68,21 @@ logo > #email > i {
     font-size: 40px;
 }
 
+header {
+    height: 150px;
+}
+
 nav {
-    width: 100%;
-    display: inline-block;
+    width: 80%;
+    height: 60px;
+    display: block;
     text-align: center;
     background-color: #d56200;
     border-radius: 10px;
-    margin: 0;
-    position: -webkit-sticky; /* Safari */
+    margin: 0px auto;
     position: sticky;
+    position: -webkit-sticky; /* Safari */
     top: 0;
-}
-
-nav a {
-    color: inherit;
-    text-decoration: none;
 }
 
 nav > ul {
@@ -102,6 +105,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
+    letter-spacing: 2px;
     color: #11ac0c;
     cursor: pointer;
 }
@@ -114,6 +118,16 @@ nav > ul > li:last-child {
     border-radius: 0 15px 15px 0;
 }
 
+nav ul li a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 .two-headers-paragraph {
     color: #eee;
 }
@@ -122,24 +136,22 @@ nav > ul > li:last-child {
     color: #eee;
 }
 
-.two-headers-paragraph  h3 {
+.two-headers-paragraph > h3 {
     color: #e67300;
     font-size: 1.3rem;
 }
 
-.two-headers-paragraph  h1 {
+.two-headers-paragraph > h1 {
     font-size: 2.2rem;
-    margin-top: 25px;
 }
 
-.two-headers-paragraph  p {
+.two-headers-paragraph > p {
     font-size: 1.1rem;
 }
 
 .two-headers-paragraph {
     color: #333;
 }
-
 section#index-first-one {
     display: inline-block;
     margin-top: 20px;
@@ -256,6 +268,10 @@ h3 {
     margin-top: 100px;
 }
 
+.two-headers-paragraph > h1 {
+    margin-top: 25px;
+}
+
 .list-inside > ul {
     list-style-image: url('../img/checkmark2.png');
     list-style-position: outside;
@@ -272,7 +288,7 @@ h3 {
 }
 
 #job-offers {
-    margin-top: 150px;
+    margin: 150px 0;
 }
 
 #left-part {
@@ -344,34 +360,145 @@ h3 {
     margin-top: 50px;
 }
 
-.offer-big {
-    border-radius: 25px;
-    width: 70%;
-    padding: 4%;
-    height: 170px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #d56200;
-    margin-bottom: 35px;
-    background-color: #f4f4f4;
-    font-size: 0.9rem;
+
+/* Kontakt */
+#kontakt {
+    display: flex;
+    margin-bottom: 100px;
 }
 
-.offer-big > #head {
-    width: 25%;
-    float: left;
+.form-container {
+    width: 65%;
     height: 100%;
+    z-index: 1;
 }
 
-.offer-big > #text {
-    width: 75%;
+.form-container p {
+    font-weight: 600;
+}
+
+.form-container h1 {
+    font-size: 36px;
+}
+.form-container form{
+    width: 620px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container p {
+    color: #e67300;
+}
+
+.form-container input {
+    height: 50px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#tresc {
+    height: 150px;
+    margin: 0px;
+    padding-top: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    resize: none;
+}
+
+#tresc::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.zgoda label {
+    font-size: 12px;
+}
+
+#form-btn {
+    width: 160px;
+    height: 44px;
+    border: 2px solid #e67300;
+    color: #e67300;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+}
+
+#form-btn:hover {
+    cursor: pointer;
+    background-color: #11ac0c;
+    border: 2px solid #11ac0c;
+    color: white;
+    transition: 300ms;
+}
+
+.kontakt-elektroniczny {
+    width: 35%;
+    height: 655px;
+    background-color: #e67300;
+    z-index: -1;
+    border-radius: 12px;
+    padding: 255px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-container img{
+    width: 100px;
+    height: 90px;
     float: left;
 }
 
-.offer-big p {
-    margin: 0;
+.email-text {
+    float: right;
+    margin-left: 15px
 }
 
-#industry {
-    display: none;
+.email-text h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.email-text a {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.email-text a:link {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    background-image: url("../img/footer.webp");
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 400px;
+}
+
+.footer-logo-container {
+    width: 80%;
+    margin: 40px auto;
+    font-size: 14px;
+}
+
+.footer-logo {
+    float: left;
+    text-align: left;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-left: 40px;
 }

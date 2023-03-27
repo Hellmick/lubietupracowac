@@ -1,0 +1,83 @@
+#offers {
+    width: 45%;
+}
+
+h2, h1, p {
+    margin: 0;
+}
+
+#offers p {
+    font-size: 0.85rem;
+}
+
+.offer-wide {
+    border-radius: 25px;
+    width: 100%;
+    padding: 3%;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #d56200;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    font-size: 0.9rem;
+    transition: 500ms;
+}
+
+.offer-wide:hover {
+    border: 3px solid #11ac0c;
+}
+
+.offer-big > #head {
+    width: 25%;
+    float: left;
+    height: 100%;
+}
+
+.offer-big > #text {
+    width: 75%;
+    float: left;
+}
+
+.offer-big p {
+    margin: 0;
+}
+
+#search-input {
+    height: 25px;
+    width: 20%;
+    font-size: 1.1rem;
+    border: 3px solid #d56200;
+    border-radius: 10px;    
+}
+
+#search-input:active {
+    border: 3px solid #d56200;
+    outline: none;
+}
+
+#search {
+    height: 33px;
+    width: 10%;
+    font-size: 1.1rem;
+    background-color: #d56200;
+    border-radius: 10px;
+    border: none;
+    color: #f4f4f4;
+    transition: 200ms;
+    margin-right: 25px;
+}
+
+#search:hover {
+    background-color: #11ac0c;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#industries > h1, h2 {
+    margin-bottom: 20px;
+}
+
+#industries input {
+    margin-right: 20px;
+}
