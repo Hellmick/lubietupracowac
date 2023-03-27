@@ -5,13 +5,12 @@
         <title>lorem ipsum</title>
         <link rel="stylesheet" href="static/styles/main.css"/>
         <link rel="stylesheet" href="static/styles/small.css"/>
-        <link rel="stylesheet" href="static/styles/login.css">
         <link rel="stylesheet" href="static/styles/hover_underline_animation.css"/>
-        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./static/fonts/fontello-56bb7c4a/css/fontello.css"/>
+        <link rel="stylesheet" href="./static/styles/login.css">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <script src="script.js"></script>
     </head>
@@ -42,16 +41,16 @@
                     <li><a href="./kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
-            
-            <div id="login-container-nip">
+
+            <div class="login-container">
                 <h1>Zaloguj się</h1>
 
                 <form action="">
                     <label for="login">Numer Identyfikacji Podatkowej:</label>
-                    <input type="text" id="login" placeholder="Twój NIP...">
+                    <input type="email" id="login" placeholder="Twój NIP...">
                     <label for="password">Hasło:</label>
-                    <input type="text" id="password" placeholder="Twoje hasło...">
-                    <input type="button" value="zaloguj się" class="login-modal-button">
+                    <input type="password" id="password" placeholder="Twoje hasło...">
+                    <input type="button" value="zaloguj się" class="login-modal-button" onclick='window.location.href = "pracodawca.html"'/>
                 </form>
 
                 <hr>
@@ -59,12 +58,5 @@
             </div>
 
         </main>
-        <footer>
-            <div class="footer-logo">
-                <img src="static/img/logo.png" alt="logo">
-                <p>Administratorem państwa danych jest <br />xyz</p>
-                <p>Klauzula rodo:</p>
-                <p>Regulamin:</p>
-            </div>
-        </footer>
     </body>
+</html>

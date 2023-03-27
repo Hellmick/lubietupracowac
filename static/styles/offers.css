@@ -81,3 +81,56 @@ h2, h1, p {
 #industries input {
     margin-right: 20px;
 }
+
+#selected-offer, #new-offer {
+    float: right;
+    height: 50vh;
+    border-radius: 15px;
+    width: 43%;
+    padding-left: 3%;
+    padding-top: 3%;
+    border: 3px solid #d56200;
+}
+
+#new-offer {
+    height: 60vh;
+}
+
+#new-offer-description {
+    width: 80%;
+    height: 120px;
+    resize: none;
+}
+
+#selected-offer h1 {
+    font-size: 1.5rem;
+}
+
+#selected-offer h2 {
+    font-size: 1.2rem;
+}
+
+#selected-offer h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#offers {
+    overflow: auto;
+    float: left;
+    width: 50%;
+    height: 55vh;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.8rem;  
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+#offer-items {
+    margin-top: 15px;
+}

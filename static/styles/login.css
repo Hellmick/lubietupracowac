@@ -1,6 +1,6 @@
 .login-container {
     width: 479px;
-    height: 547px;
+    height: 25rem;
     border-radius: 10px;
     background-color: #eee;
     display: flex;
@@ -8,11 +8,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
+
 .login-container h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .login-container form {
@@ -30,7 +31,7 @@
     border: 2px solid #d56200;
     border-radius: 10px;
     padding: 0rem 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1,5rem;
 }
 
 .login-container form .login-modal-button {
@@ -61,7 +62,7 @@
 }
 
 .login-container p {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     border: none;
 }
 

@@ -11,7 +11,7 @@ var offersList = [
 function showOffers() {
     let element = document.getElementById("offers");
 
-    element.innerHTML = "";
+    element.innerHTML = "<h1>Twoje aktywne oferty:</h1>";
     for (let i = 0; i < offersList.length; i++) {
         if (offersList[i].visible) {
             var offer_html =  `
