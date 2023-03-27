@@ -346,3 +346,7 @@ h3 {
 .three-boxes#offers {
     margin-top: 50px;
 }
+
+#sliderImage {
+    background-image: url('../img/slider/image1_blue.jpeg');
+}

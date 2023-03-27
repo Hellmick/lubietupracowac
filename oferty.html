@@ -13,8 +13,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta charset="utf-8"/>
         <script src="./scripts/script.js"></script>
-        <script src="./scripts/offers.js"></script>
-        <script src="./scripts/search-engine.js"></script>
+        <script src="./scripts/offers.js"></script> 
     </head>
     <body onload="showOffers()">
         <main>
@@ -55,15 +54,14 @@
                             <li value="Wszystkie" onclick="filterOffers(this);">Wszystkie</li>
                         </ul>
                     </div>
-                    <button id="search" onclick="searchOffers(); showOffers()">Szukaj</button>
+                    <button id="search" onclick="refreshOffers()">Szukaj</button>
                 </h2>
-                <section>
+                <div id="offer-items">
                     <div id="offers"></div>
-                </section>
+                    <dif id="selectedOffer"></dif>
+                </div>
             </section>
         </main>
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
 </html>

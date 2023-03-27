@@ -1,9 +1,10 @@
-#offers {
-    width: 45%;
-}
-
 h2, h1, p {
     margin: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #offers p {
@@ -12,8 +13,7 @@ h2, h1, p {
 
 .offer-wide {
     border-radius: 25px;
-    width: 100%;
-    padding: 3%;
+    width: 90%;
     height: 90px;
     margin-left: auto;
     margin-right: auto;
@@ -22,24 +22,32 @@ h2, h1, p {
     background-color: #f4f4f4;
     font-size: 0.9rem;
     transition: 500ms;
+    padding: 3%;
+}
+
+.offer-wide h2 {
+    margin: 0;
+    font-size: 1,1rem;
 }
 
 .offer-wide:hover {
     border: 3px solid #11ac0c;
+    cursor: pointer;
+    background-color: #eee;
 }
 
-.offer-big > #head {
+.offer-wide > #head {
     width: 25%;
     float: left;
     height: 100%;
 }
 
-.offer-big > #text {
+.offer-wide > #text {
     width: 75%;
     float: left;
 }
 
-.offer-big p {
+.offer-wide p {
     margin: 0;
 }
 
@@ -74,10 +82,38 @@ h2, h1, p {
     cursor: pointer;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
 #industries > h1, h2 {
     margin-bottom: 20px;
 }
 
 #industries input {
     margin-right: 20px;
+}
+
+#selectedOffer {
+    float: right;
+    height: 52vh;
+    border-radius: 15px;
+    width: 47%;
+    border: 3px solid #d56200;
+}
+
+#offers {
+    overflow: auto;
+    float: left;
+    width: 50%;
+    height: 55vh;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.8rem;  
+}
+
+h3 {
+    font-size: 0.9rem;
 }

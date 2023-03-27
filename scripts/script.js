@@ -1,6 +1,6 @@
 
 var curIndex = 1;
-let currentImage = 1;
+var currentImage = 1;
 const maxImage = 2;
 const img = './static/img/slider/image*_blue.jpeg'
 
